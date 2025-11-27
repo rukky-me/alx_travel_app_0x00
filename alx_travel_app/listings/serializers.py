@@ -53,3 +53,9 @@ class BookingSerializer(serializers.ModelSerializer):
         booking.clean()
         booking.save()
         return booking
+    
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = ["id", "listing", "user", "rating", "comment", "created_at"]
+        read_only_fields = ["id", "created_at"]

@@ -55,7 +55,8 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
-    ]
+        ]
+
 }
 
 MIDDLEWARE = [
@@ -88,6 +89,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
+
 
 
 # Database
